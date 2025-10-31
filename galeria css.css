@@ -37,7 +37,7 @@ body {
 
 /* MENÚ */
 .menu {
-    background-color: #1b4965;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -67,7 +67,7 @@ body {
 
 h2 {
     text-align: center;
-    color: #1b4965;
+    color: #7878E3;
     margin-bottom: 30px;
 }
 
@@ -118,4 +118,5 @@ h2 {
     .foto img {
         height: 150px;
     }
+
 }
