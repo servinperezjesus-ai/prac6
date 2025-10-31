@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #eef3f6;
+    color: #222;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    position: relative;
+    text-align: center;
+    color: rgb(14, 11, 11);
+}
+
+.imagen-encabezado {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.texto-encabezado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto-encabezado h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.texto-encabezado p {
+    font-size: 1.1em;
+}
+
+/* MENÚ */
+.menu {
+    background-color: #1b4965;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #3282b8;
+}
+
+.menu .activo {
+    background-color: #3282b8;
+}
+
+/* CONTENIDO */
+.contenido {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #1b4965;
+    margin-bottom: 30px;
+}
+
+/* REJILLA DE IMÁGENES */
+.rejilla-imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.foto:hover img {
+    transform: scale(1.1);
+}
+
+.foto:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* PIE */
+.pie {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+    .texto-encabezado h1 {
+        font-size: 1.5em;
+    }
+    .foto img {
+        height: 150px;
+    }
+}
